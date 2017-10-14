@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Custode</string>
+
+    <!-- Strings related to MainActivity -->
+
+    <string name="alarm_now">Attiva allarme ora</string>
+    <string name="hold_your_finger_1">Tieni premuto il dito sullo schermo per attivare Custode</string>
+    <string name="hold_your_finger_2">Tieni premuto il dito sullo schermo</string>
+    <string name="gps_disabled_dialog_message">Per poter utilizzare Custode è necessario abilitare il GPS. Vuoi aprire le Impostazioni?</string>
+    <string name="no_pin_dialog_message">Non hai impostato un PIN per disattivare l\'allarme. Vuoi farlo ora?</string>
+    <string name="no_favorite_contacts_dialog_message">Non hai impostato nessun contatto come preferito. Vuoi farlo ora?</string>
+    <string name="start_alarm_dialog_message">Sei sicuro di voler attivare l\'allarme? I tuoi contatti verranno informati immediatamente.</string>
+    <string name="permission_denied_dialog_message">L\'applicazione non può funzionare senza tutti i permessi. Verranno aperte le Impostazioni, dove potrai concedere i permessi necessari. Quando hai fatto premi indietro per tornare a Custode.</string>
+
+    <!-- Strings related to PintCountdownActivity -->
+
+    <plurals name="you_have_x_seconds">
+        <item quantity="one">un secondo rimanente</item>
+        <item quantity="other">%d secondi rimanenti</item>
+    </plurals>
+    <string name="enter_your_pin">Inserisci il tuo PIN</string>
+    <string name="incorrect_pin">PIN errato</string>
+    <string name="alarm_off">Allarme disattivato</string>
+    <string name="unknown_location">Posizione sconosciuta</string>
+
+
+    <!-- Strings related to SummaryActivity -->
+
+    <string name="stop_alarm_dialog_title">Termina il tracciamento</string>
+    <string name="stop_alarm_dialog_message_1">Sei sicuro di voler terminare?</string>
+    <string name="stop_alarm_dialog_message_2">Sei sicuro di voler terminare? I contatti selezionati non potranno più ricevere la tua posizione aggiornata.</string>
+    <string name="summary_positive_text">I tuoi contatti sono stati avvisati e potranno, su richiesta, ricevere la tua posizione aggiornata.</string>
+    <string name="summary_negative_text">Impossibile determinare la posizione, gli avvisi NON verranno inviati. Usa le seguenti scorciatoie per contattare i tuoi numeri preferiti.</string>
+    <string name="sms_sent_notification_title">Aggiornamento di posizione inviato</string>
+    <string name="sms_sent_notification_text">%s ha richiesto e ricevuto la tua posizione aggiornata.</string>
+    <string name="sms_limit_reached_notification_title">Limite SMS raggiunto</string>
+    <string name="sms_limit_reached_notification_text">%s ha richiesto la tua posizione aggiornata, ma è stato raggiunto il limite orario di SMS inviati quindi non verrà inviata alcuna risposta.</string>
+
+
+    <!-- Strings related to Settings -->
+
+    <string name="title_activity_settings">Impostazioni</string>
+    <string name="pin_length_error">Il PIN deve essere lungo 4 cifre</string>
+    <string name="restore_defaults">Ripristina default</string>
+    <string name="default_sms_body">Ho bisogno di aiuto. Rispondimi con \"gps\" per ricevere la mia posizione aggiornata.</string>
+    <string name="pref_header_general">Generali</string>
+    <string name="pref_title_pick_contacts">Contatti preferiti</string>
+    <string name="pref_summary_pick_contacts">I contatti a cui verrà spedito l\'SMS di allarme con la tua posizione</string>
+    <string name="pref_title_pin">PIN disattivazione allarme</string>
+    <string name="pref_summary_pin">Il codice che ti verrà richiesto per annullare l\'invio degli SMS di allarme</string>
+    <string name="pref_title_reply_location_request">Rispondi sempre a richieste di posizione</string>
+    <string name="pref_summary_on_reply_location_request">Permetti ai contatti selezionati di conoscere la tua posizione inviandoti un SMS contentente \"%s\" anche quando l\'applicazione non è attiva</string>
+    <string name="pref_summary_off_reply_location_request">Permetti ai contatti selezionati di conoscere la tua posizione inviandoti un SMS contentente \"%s\" solo quando attiverai un allarme</string>
+    <string name="pref_sms_body_title">Messaggio di allarme</string>
+    <string name="pref_sms_body_summary">Il testo dell\'SMS di allarme. Il testo precederà un link alla tua posizione</string>
+    <string name="stop_alarm_dialog_neutral_button">Invia nuovamente posizione</string>
+    <string name="pref_title_sms_limit">Limite orario messaggi</string>
+    <plurals name="pref_summary_sms_limit">
+        <item quantity="other">%d messaggi inviati all\'ora in risposta a richieste di posizione</item>
+        <item quantity="one">Un messaggio inviato all\'ora in risposta a richieste di posizione</item>
+    </plurals>
+
+</resources>

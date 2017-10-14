@@ -1,0 +1,46 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.gvdev.custode.preferences.PinPreference
+        android:key="pin"
+        android:defaultValue=""
+        android:title="@string/pref_title_pin"
+        android:maxLength="4"
+        android:inputType="numberPassword"
+        android:summary="@string/pref_summary_pin" />
+
+    <Preference
+        android:title="@string/pref_title_pick_contacts"
+        android:summary="@string/pref_summary_pick_contacts">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.gvdev.custode"
+            android:targetClass="com.gvdev.custode.activities.ContactsPickerActivity" />
+    </Preference>
+
+    <com.gvdev.custode.preferences.RestoreDefaultPreference
+        android:key="sms_body"
+        android:defaultValue="@string/default_sms_body"
+        android:title="@string/pref_sms_body_title"
+        android:summary="@string/pref_sms_body_summary"
+        android:inputType="textShortMessage"
+        android:digits="\@&#163;$&#165;&#232;&#233;&#249;&#236;&#242;&#199;\n&#216;&#248;\r&#197;&#229;&#916;_&#934;&#915;&#923;&#937;&#928;&#936;&#931;&#920;&#926;&#198;&#230;&#223;&#201; !\&quot;#&#164;%&amp;&#39;()*+,-./0123456789:;&lt;=&gt;?&#161;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#196;&#214;&#209;&#220;&#167;&#191;abcdefghijklmnopqrstuvwxyz&#228;&#246;&#241;&#252;&#224;"
+        android:maxLength="115" />
+    <!--
+     maxLength = maxSmsLength - spaceLength - gmapsUrlLength = 160 - 1 - 44 = 115
+     https://en.wikipedia.org/wiki/Short_Message_Service#Message_size
+     https://en.wikipedia.org/wiki/GSM_03.38#GSM_7-bit_default_alphabet_and_extension_table_of_3GPP_TS_23.038_.2F_GSM_03.38 -->
+
+    <SwitchPreference
+        android:key="reply_location_request_always"
+        android:title="@string/pref_title_reply_location_request"
+        android:summaryOn="@string/pref_summary_on_reply_location_request"
+        android:summaryOff="@string/pref_summary_off_reply_location_request"
+        android:defaultValue="false" />
+
+    <com.gvdev.custode.preferences.NumberPickerPreference
+        android:key="sms_limit"
+        android:title="@string/pref_title_sms_limit"
+        android:defaultValue="10"
+        />
+
+</PreferenceScreen>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activities.PinCountdownActivity"
+    android:background="@color/md_grey_700"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unknown_location"
+            android:id="@+id/location_text_view"
+            android:drawableLeft="@drawable/ic_room"
+            android:drawablePadding="5dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/enter_your_pin"
+                android:id="@+id/textView3"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@plurals/you_have_x_seconds"
+                android:id="@+id/countdown_text_view"
+                android:textColor="@color/md_grey_300"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <com.gvdev.custode.views.PinCodeView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/pin_code_view"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <android.inputmethodservice.KeyboardView
+            android:id="@+id/keyboard_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="visible"
+            android:keyTextColor="@color/md_grey_800"
+            android:background="@color/md_grey_100"
+            android:shadowRadius="0"
+            android:layout_gravity="left|bottom|right|center_horizontal"
+            android:keyBackground="@android:color/transparent" />
+
+    </LinearLayout>
+
+</RelativeLayout>
